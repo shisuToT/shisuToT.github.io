@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script>
+		function showpic(whichOne){
+			var a=document.getElementById("img");
+			var b=whichOne.getAttribute("href");
+			a.setAttribute("src",b);
+}
+	</script>
+</head>
+<body>
+	<ul>
+		<li><a href="img/a1.jpg" onclick="showpic(this);return false">a1</li>
+
+		<li><a href="img/a2.jpg" onclick="showpic(this);return false">a2</li>
+
+		<li><a href="img/a3.jpg" onclick="showpic(this);return false">a3</li>
+
+		<li><a href="img/a4.jpg" onclick="showpic(this);return false">a4</li>
+	</ul>
+		<img id="img" src="img/bj.jpg">
+</body>
+</html>
